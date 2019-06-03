@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="我自己的测试套件">
+    <test name="这是我的测试模块">
+        <classes>
+            <class name="com.tester.extent.demo.test">
+                <!--                <methods>-->
+                <!--                    <include name="testcase1"/>-->
+                <!--                    <include name="testcase2"/>-->
+                <!--                    <include name="testcase3"/>-->
+                <!--                    <include name="testcase4"/>-->
+                <!--                    <include name="logDemo"/>-->
+
+                <!--                </methods>-->
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+
+    <listeners>
+        <listener class-name ="com.extentsreport.base.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>
