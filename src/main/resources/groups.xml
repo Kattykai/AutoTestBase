@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "suite">
+    <test name = "rungroup">
+        <classes>
+            <groups>
+                <run>
+                    <include name = "client"></include>
+                </run>
+            </groups>
+            <class name = "com.testcase.caseall.TestCaseDemo"/>
+            <class name = "com.testcase.caseall.TestCaseDemo"/>
+
+        </classes>
+
+
+    </test>
+
+
+</suite>

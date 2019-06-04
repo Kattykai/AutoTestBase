@@ -1,0 +1,126 @@
+[
+  {
+    "description": "",
+    "request": {
+      "uri": "/demo",
+      "method": "get"
+    },
+    "response": {
+      "text": "第一个moco框架demo"
+    }
+  },
+  {
+    "description": "",
+    "request": {
+      "uri": "/getdemo",
+      "method": "get",
+      "queries": {
+        "name": "Susan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "text": "Hello,susan,you are 18"
+    }
+  },
+  {
+    "description": "",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post"
+    },
+    "response": {
+      "text": "This is my first postdemo"
+    }
+  },
+  {
+    "description": "",
+    "request": {
+      "uri": "/postWithParam",
+      "method": "post",
+      "forms": {
+        "name": "Susan",
+        "sex": "2"
+      }
+    },
+    "response": {
+      "text": "My name is susan,my sex is female"
+    }
+  },
+  {
+    "description": "",
+    "request": {
+      "uri": "/getWithCookie",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "This is an get with cookies"
+    }
+  },
+  {
+    "description": "",
+    "request": {
+      "uri": "/postWithCookie",
+      "method": "post",
+      "cookies": {
+        "login": "true",
+        "age": "18"
+      },
+      "json": {
+        "name": "susan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "susan": "success",
+        "status": "1"
+      }
+    }
+  },
+  {
+    "description": "",
+    "request": {
+      "uri": "/postWithHeader",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "json": {
+        "name": "susan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "susan": "success",
+        "status": "1"
+      }
+    }
+  },
+  {
+    "description": "",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+  {
+    "description": "这是一个会返回cookies信息的请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "text": "Get cookies success"
+    }
+  }
+]

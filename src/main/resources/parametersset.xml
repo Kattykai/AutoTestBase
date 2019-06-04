@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name ="parameters">
+    <test name = "parameters">
+        <classes>
+            <parameter name = "name" value = "Auto"/>
+            <parameter name = "age" value = "10"/>
+            <class name = "com.testcase.caseall.TestCaseDemo"/>
+        </classes>
+
+
+    </test>
+
+
+</suite>
